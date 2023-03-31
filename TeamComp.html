@@ -16,98 +16,159 @@
        
     </head>
     <body>
-    <!-- NAV BAR -->
+<!-- NAV BAR -->
 
-    <div>
-        <style>
-            body {
-              margin: 0;
-              font-family: Arial, Helvetica, sans-serif;
-            }
-            
-            .topnav {
-              overflow: hidden;
-              background-color: #ebd270;
-            }
-            
-            .topnav a {
-              float: left;
-              display: block;
-              color: #343914;
-              text-align: center;
-              padding: 14px 16px;
-              text-decoration: none;
-              font-size: 17px;
-            }
-            
-            .topnav a:hover {
-              background-color: #ddd;
-              color: black;
-            }
-            
-            .topnav a.active {
-              background-color: #ebb730;
-              color: white;
-            }
-            
-            .topnav .icon {
-              display: none;
-            }
-            
-            @media screen and (max-width: 600px) {
-              .topnav a:not(:first-child) {display: none;}
-              .topnav a.icon {
-                float: right;
-                display: block;
-              }
-            }
-            
-            @media screen and (max-width: 600px) {
-              .topnav.responsive {position: relative;}
-              .topnav.responsive .icon {
-                position: absolute;
-                right: 0;
-                top: 0;
-              }
-              .topnav.responsive a {
-                float: none;
-                display: block;
-                text-align: left;
-              }
-            }
-            </style>
-            </head>
-            <body>
-            
-                <div class="topnav" id="myTopnav">
-                    <a href="index.html">Home</a>
-                    <a href="ProjectDescription.html" >Project Description</a>
-                    <a href="Attributions.html" >Attributions</a>
-                    <a href="TeamComp.html" class="active">iGEM Team Comparison</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                      <i class="fa fa-bars"></i>
-                    </a>
-                </div>
-            
-            
-            <script>
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
-            }
-            </script>
-            <p> Test </p>
-            </body>
-    
-    </div>
+<div>
+  <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .topnav {
+        overflow: hidden;
+        background-color: #1e3357;
+      }
+      
+      .topnav a {
+        float: left;
+        display: block;
+        color: #e6e5f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .topnav a.active {
+        background-color: #ebb730;
+        color: #152238;
+      }
+      
+      .topnav .icon {
+        display: none;
+      }
+      
+      @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child) {display: none;}
+        .topnav a.icon {
+          float: right;
+          display: block;
+        }
+      }
+      
+      @media screen and (max-width: 600px) {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      }
+      </style>
+      </head>
+      <body>
+      
+          <div class="topnav" id="myTopnav">
+              <a href="index.html">Home</a>
+              <a href="ProjectDescription.html" class="active">Project Description</a>
+              <a href="Attributions.html">Attributions</a>
+              <a href="TeamComp.html">iGEM Team Comparison</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+              
+              
+          </div>
+      
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+      </body>
+
+
+  
+</div>
 
 <!-- End of NavBar -->
 
-<p> Testing Team Comp </p>
+<!-- Content -->
+<div class="hp_a_s_div m-4">
+  <p align="justify">
+    <h1>Comparison to Past iGEM Teams</h1> 
+    <br><br>
+    <em>The 2017 ChiTUcare iGEM team from UT Darmstadt tackled the problem of pathogenic infections with a similar approach as ChitoZing. 
+    ChiTUcare aimed to manufacture a chitosan hydrogel that would not only aid in healing, but also allow for easy detection of 
+    bacteria in wounds.</em><br><br><br>
+
+    To introduce antimicrobial and wound-healing properties to their hydrogel, ChiTUcare used chitosan as their hydrogel substrate. 
+    They mainly obtained chitin, precursor for chitosan, from marine sources such as crab shells, which were then chemically processed 
+    to create chitosan. They found that the biological activities of chitosan differed depending on its chemical properties. They saw 
+    increasing antimicrobial properties with decreasing chain length, while scar-free wound healing properties depended on the 
+    deacetylation pattern of chitosan. To enable precise production of defined chain length and deacetylation pattern oligomers, 
+    they produced chitosan in E. coli using chitin synthase, chitin deacetylases and chitinase. This ensured that they produced the 
+    optimum chitosan substrate for the production of their hydrogels.<br> <br>
+
+    In order to detect bacteria, ChiTUcare team used the increase in protease levels as an indicator of bacterial invasion. 
+    Specifically, alpha-chymotrypsin protease secreted by Staphylococcus aureus and Pseudomonas aeruginosa was used as the marker. 
+    To detect the presence of protease, chitosan was first modified at the amino group with succinic anhydride which provided a binding 
+    domain for a peptide that contained the fluorogenic substrate of phenylalanine. More peptides were cleaved with increased protease 
+    activity which emitted intense light, giving an easy read-out of the infection status.<br><br>
+
+    <!--Image/Figure-->
+    <div class="text-center">
+    <figure class="figure">
+      <img src="https://github.com/nperew/MDSC507-ChitoZing-Wiki/blob/main/Images/COMPf1.png?raw=true" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+      
+      <figcaption class="figure-caption">Figure 1. Schematic of the production of the enzyme-sensing chitosan. In the first <br>
+                                        step, succinic anhydride is bound to the amino group of the chitosan. The resulting <br>
+                                        N-succinic chitosan is coupled with Ala-Ala-Phe-7-AMC via the free carboxyl group of <br>
+                                        the succinic residue in the second step.                                            
+      </figcaption>
+    
+    </figure>
+    </div>
+    <!-- Another One-->
+    <div class="text-center">
+      <figure class="figure">
+        <img src="https://github.com/nperew/MDSC507-ChitoZing-Wiki/blob/main/Images/COMPf2.png?raw=true" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        
+        <figcaption class="figure-caption">Figure 2. Principle of detection of proteases. A-chymotrypsin cleaves 7-AMC behind <br>
+                phenylalanine, allowing the fluorophore to be detected with the naked eye via UV light <br>
+                because 7-AMC has a fluorescence emission wavelength at 450 nm (blue light).
+                                        
+        </figcaption>
+      
+      </figure>
+      </div>
+
+    <br>Reviewing the ChiTUcare team’s project gave insight into the feasibility of our project, scientific approach to wet and dry 
+    components and also provided us with some inspiration. We realized the importance of identifying the optimal chemical properties 
+    of chitosan and generating a defined chain length and specific deacetylation pattern. Their additional aspect of bacteria detection 
+    inspired ChitoZing to include our own unique feature into our product; including a reactive litmus-like paper that changes colour 
+    based on the extent of exposure to open wound exudate.<br>
+  </p>
+</div>
+    </body>
+<!-- End of Content-->
     </body>
 
 
